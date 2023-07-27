@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>
+            parallex proj
+        </title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+
+            }
+      #wrapper{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 10px;
+      }
+      .container{
+        height: 100%;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transform-style: preserve-3d;
+       z-index: -1;
+      }
+      .background{
+        transform: translateZ(-40px) scale(5px);
+
+      }
+      .forground{
+        transform: translateZ(-20px) scale(3px);
+      }
+   .background,.forground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+   }
+   h1{
+    position: absolute;
+    font-size: 10rem;
+    top: 3rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    
+    text-shadow: 0 0 10px rgb(0,0,0,0.3);
+   }
+   section{
+      background-color: rgb(45,45,45); 
+      color: white;
+      padding: 5rem 0;  
+   }
+   .secheading{
+    font-size: 5rem;
+    padding: 0 5rem;
+   }
+   .text{
+    font-size: 1.5rem;
+    padding:0 10rem ;
+    margin: 5rem 0;
+   }
+   .bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+   }
+   .dsce{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateX(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+   }
+  .bg1
+  {
+    background-image: url(https://static.toiimg.com/photo/msid-84409284,width-96,height-65.cms);
+  }
+  .bg2{
+    background-image: url(https://i1.adis.ws/i/canon/canon-pro-ben-thouard-surfing-eos-1d-x-mark-iii-1-1140x760?$og-image$);
+  }
+  .bg3{
+    background-image: url(https://static.toiimg.com/thumb/66344354.cms?resizemode=75&width=1200&height=900);
+  }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div class="container">
+                <img src="https://img.freepik.com/free-photo/beautiful-scenery-mountain-range-covered-with-snow-cloudy-sky_181624-37711.jpg?w=2000" class="background">
+                <img src="" class="forground">
+                 <h1>ADVENTURE</h1>
+            </div>
+
+
+         <section>
+        <h2 class="secheading"> Adventure time</h2>
+      
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam saepe quia, id perferendis cum ipsum, quos rem et illum officiis eius temporibus dolorem amet accusamus voluptatem harum aspernatur minus. Totam.
+       <br><br>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos cum quaerat, omnis assumenda, odio libero dignissimos voluptatem labore sit, animi eaque repellendus quae dolores. Reiciendis nobis cum laudantium ullam!
+           </p>
+
+           <div class="bg bg1">
+            <h2 class="dsce">BIKING</h2>
+            </div>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam saepe quia, id perferendis cum ipsum, quos rem et illum officiis eius temporibus dolorem amet accusamus voluptatem harum aspernatur minus. Totam.
+              <br><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos cum quaerat, omnis assumenda, odio libero dignissimos voluptatem labore sit, animi eaque repellendus quae dolores. Reiciendis nobis cum laudantium ullam!
+                  </p>
+
+
+             
+  <div class="bg bg2">
+  <h2 class="dsce">SURFING</h2>
+  </div>
+   <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam saepe quia, id perferendis cum ipsum, quos rem et illum officiis eius temporibus dolorem amet accusamus voluptatem harum aspernatur minus. Totam.
+   <br><br>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos cum quaerat, omnis assumenda, odio libero dignissimos voluptatem labore sit, animi eaque repellendus quae dolores. Reiciendis nobis cum laudantium ullam!
+   </p>
+
+
+                         
+<div class="bg bg3">
+                <h2 class="dsce">PARAGLIDING</h2>
+      </div>
+       <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam saepe quia, id perferendis cum ipsum, quos rem et illum officiis eius temporibus dolorem amet accusamus voluptatem harum aspernatur minus. Totam.
+   <br><br>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos cum quaerat, omnis assumenda, odio libero dignissimos voluptatem labore sit, animi eaque repellendus quae dolores. Reiciendis nobis cum laudantium ullam!
+   </p>
+      </section>
+
+        </div>
+    </body>
+</html>
